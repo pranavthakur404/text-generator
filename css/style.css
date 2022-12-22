@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: rgb(245, 242, 242);
+    font-size: 15px;
+}
+main{
+    padding:2%;
+}
+h1{
+    text-align: center;
+    font-size: 3.5rem;
+}
+.text-input{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.text-input textarea{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: 350px;
+}
+.buttons{
+    width: 80%;
+    margin: 0 auto;
+}
+button{
+    padding: 15px 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+    margin-right: 15px;
+    font-weight: 700;
+    border: none;
+    transition: 0.5s;
+    transition-property: background,color;
+}
+button:hover{
+    background-color: black;
+    cursor: pointer;
+    box-shadow: 0px 10px 12px black;
+    color:white;
+}
+textarea{
+    padding: 1%;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+textarea:focus{
+    box-shadow: 0px 5px 7px 0px skyblue;
+    border: none;
+}
