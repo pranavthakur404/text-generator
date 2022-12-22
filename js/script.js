@@ -23,12 +23,21 @@ capitalizeCase.addEventListener('click',()=>{
     const inputValue = userInput.value;
     // split into array
     const words = inputValue.split(" ");
-    
-    for(let i=0;i<words.length;i++){
-        // words[i].substr will add all charactare from index 1
-         words[i] = words[i][0].toUpperCase() + words[i].substr(1).toLowerCase();; 
+    console.log(words)
+    const newWords = [];
+    // removing space from array
+    for(let x of words){
+         if(x!==""){
+            console.log("working")
+            newWords.push(x);
+         }
     }
-    userInput.value = words.join(" ");
+
+    for(let i=0;i<newWords.length;i++){
+        // words[i].substr will add all charactare from index 1
+         newWords[i] = newWords[i][0].toUpperCase() + newWords[i].substr(1).toLowerCase();; 
+    }
+    userInput.value = newWords.join(" ");
         
 })
 
